@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="tetris.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="tetris.css"><link>
+    <link rel="icon" href="images/Title.png" type="image/x-icon">
+    <title>Basic Tetris</title>
+  </head>
+  <body> 
+    <img id="title" src="images/Title.png">
+    
+    <div class="container">
+        <div class="grid">
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div><div ></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+        </div>
+          <div class="left-menu">
+            <div class="mini-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                
+                <p>NEXT</p>
+            </div>
+                <div class="score"> <span id="score">0</span></div>
+                <h3>Score</h3>
+              <!-- Play button -->
+              <button class="start-btn" id="start-button2" onclick="toggleAudio()">Mute/Unmute Music</button>
+              <br>
+              <br>
+
+              <button class="start-btn" id="start-button">Start/Pause The Game</button>
+          </div>
+            
+
+
+
+    </div>
+    <!-- Audio player with autoplay and loop attributes -->
+    <audio id="audioPlayer" controls autoplay loop style="display: none;">
+        <source src="a.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // JavaScript function to toggle play/pause of the audio
+        function toggleAudio() {
+            var audio = document.getElementById('audioPlayer');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+
+  </body>
+</html>
