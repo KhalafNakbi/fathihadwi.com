@@ -1,0 +1,114 @@
+#title{
+  margin-left: 30%;
+  padding-top: 5%;
+
+}
+
+body {
+    background-image: url(images/bg3jpg.jpg);
+    background-size: cover;  
+    height: 100%;
+    /* overflow: hidden; */
+
+} 
+.container {
+    display: flex;
+    margin-left: 35%;
+    
+    
+  }
+  .grid {
+    width: 300px;
+    height: 500px; 
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    border:double;
+    border-color:#0e93ec;
+    border-radius: 10px;
+    margin-top: 0%;
+    background: url(images/tile.png);
+   
+  }
+  .grid div {
+    height: 25px;
+    width: 30px;
+    /* border: solid 0.1px #03111b; */
+  }
+  /* .tetromino {
+    background-color: blue;
+  } */
+  .mini-grid {
+    margin-left: 14%;
+    background:url(images/tile.png);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #1f1f1f;
+    border-radius: 10px;
+
+    
+  }
+  
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+  }
+  .mini-grid p{
+    text-align: center;
+    margin-left: 17%;
+    margin-top: 5%;
+    color: #0e93ec;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:hand;
+    font-size: 20px;
+  }
+  .left-menu{
+    display:block;
+    background-color: #f1e8e8;
+    height: 500px;
+    width: 120px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-left: 5%;
+
+  }
+  .start-btn{
+    cursor: pointer;
+    background-color: #0e93ec;
+    color:#fff ;
+    /* margin-top:80%; */
+
+  }
+  .score{
+    margin-left: 14%;
+    background:url(images/tile.png);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #1f1f1f;
+    border-radius: 10px;
+    margin-top: 20%;
+    
+  }
+  h3 {
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 5%;
+    color:black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:hand;
+    font-size: 20px;
+  }
+  #score{
+    text-align: center;
+    position: justify;
+    /*margin-left:3y%;
+    margin-top: 20%;*/
+    margin:0 auto;
+    line-height: 80px;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+  }
